@@ -1,15 +1,5 @@
 library(shiny)
 
-
-        #selectInput("c_from", "Choose your currency from:", choices = c("eur", "usd", "gbp")),
-        #selectInput("c_to", "Choose your currency to:", choices = c("eur", "usd", "gbp")),
-        #numericInput("num", label = "Convert:", value = 1)
-        #verbatimTextOutput("fromc"), 
-        #verbatimTextOutput("toc"),
-        #verbatimTextOutput("conversion")
-
-        
-        
 shinyServer(function(input, output) {
                 
         output$fromc <- renderPrint({c(input$c_from) })
